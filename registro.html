@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+	<link href="css/servicios.css" rel="stylesheet">
+	<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link href="css/main.css" rel="stylesheet" media="all">
+	<title>NetBoxing</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fondo-main">
+			<div class="container">
+				<a href="#" class="navbar-brand">
+					<img src = "images/netbox.png" alt="" height="50px">
+				</a>
+			</div>
+		</nav>
+		<main>
+			<div class="page-wrapper p-t-45 p-b-50">
+				<div class="wrapper wrapper--w790">
+					<div class="card card-5">
+						<div class="card-heading">
+							<h2 class="title">Registro de empresa</h2>
+						</div>
+						<div class="card-body">
+							<form method="POST">
+								<div class="form-row">
+									<div class="name">Nombre</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="text" name="name" placeholder="Nombre de la empresa">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">RFC</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="text" name="rfc" placeholder="RFC de la empresa">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">Imagen Perfil</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="file" name="entrada" placeholder="suba imagen de perfil">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">Giro</div>
+									<div class="value">
+										<div class="input-group">
+											<div class="rs-select2 js-select-simple select--no-search">
+												<select name="subject">
+													<option disabled="disabled" selected="selected">Escoge opción</option>
+													<option>Tecnología</option>
+													<option>Contabilidad</option>
+													<option>Recursos Humanos</option>
+													<option>Ventas</option>
+													<option>Mercadotecnia</option>
+													<option>Legal</option>
+													<option>Seguridad</option>
+													<option>Otros</option>
+												</select>
+												<div class="select-dropdown"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">Descripción</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="text" name="descripcion" placeholder="Ingrese la descripción formal de la empresa">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">Correo electrónico</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="email" name="email" placeholder="Ingrese correo de la empresa">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">Teléfono</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="text" name="tel"placeholder="Ingrese teléfono de la empresa">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">Nombre representante</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="text" name="rep" placeholder="Nombre del representante de la empresa en la plataforma">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="name">Cargo</div>
+									<div class="value">
+										<div class="input-group">
+											<input class="input--style-5" type="text" name="cargo" placeholder="Cargo del representante">
+										</div>
+									</div>
+								</div>
+								<a href="login.php" class="btn btn-primary btn-block">Guardar y continuar</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</header>
+<script type="js/global.js"></script>
+</body>
+</html>

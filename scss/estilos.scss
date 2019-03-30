@@ -1,0 +1,31 @@
+.texto{
+    font-size: 20px;
+}
+
+.fondo-main{
+    background: #0f054c;
+}
+
+.redes{
+    background: #0f054c;
+    padding: 50px 0;
+    a {
+        color: #fff;
+        font-size: 30px;
+        width: 100px;
+	    padding: 15px 0;
+	    border-radius: 3px;
+        margin: 0 20px;
+        text-align: center;
+    }
+}
+
+.twitter:hover {	background: #1da1f2; }
+.facebook:hover { background: #3b5998; }
+.youtube:hover {	background: #cd201f; }
+.github:hover { background: #666666; }
+.instagram:hover { background: #3f729b; }
+
+.imagen-foto{
+    cursor: pointer;
+}

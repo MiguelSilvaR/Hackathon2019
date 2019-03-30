@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="icon" href="img/favicon">
+	<link href="css/encuestas.css" rel="stylesheet">
+	<title>NetBoxing</title>
+</head>
+<body>
+	<script language="javascript">
+		var popupWindow = null;
+		function centeredPopup(url,winName,w,h,scroll){
+			LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+			TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+			settings =
+			'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+			popupWindow = window.open(url,winName,settings)
+		}
+	</script>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark fondo-main">
+			<div class="container">
+				<a href="#" class="navbar-brand">
+					<img src="img/netbox.png" alt="" height="50px">
+				</a>
+				
+			</div>
+		</nav>
+		<main>
+			<div class="container">
+				<div class="mt-2 row">
+					<h1 class="col-xs-6">Indentifiquemos áreas de oportunidad</h1>
+					<a href="AyudaEncuestas.html" class="col-xs-6 ml-auto mt-2" onclick="centeredPopup(this.href,'myWindow','700','500','yes');return false"><button class="btn btn-warning" height = "50px">¿Necesitas ayuda?</button></a>
+				</div>
+				<h5 class="mb-4">Responde la encuesta considerando el estado actual de su empresa</h5>
+				<form action="">
+					<hr>
+					<div class="form-group">
+						<label for="p1" class="label2">1. ¿La compañía cuenta con un representante legal?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p1" id="p1r1" value="option1">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p1" id="p1r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p1" id="p1r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">2. ¿La compañía tiene un logo?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p2" id="p2r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p2" id="p2r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p2" id="p2r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">3. ¿La compañía cuenta con presencia en redes sociales como Facebook o Twitter?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p3" id="p3r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p3" id="p3r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p3" id="p3r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">4. ¿Tiene un equipo de mercadotecnia?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p4" id="p4r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p4" id="p4r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p4" id="p4r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">5. ¿Cuenta con personal de seguridad?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p5" id="p5r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p5" id="p5r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p5" id="p5r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">6. ¿Su personal está capacitado para actuar en caso de emergencia?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p6" id="p6r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p6" id="p6r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p6" id="p6r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">7. ¿Cuenta con personal de recursos humanos?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p7" id="p7r1" value="option1">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p7" id="p7r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p7" id="p7r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">8. ¿Cuenta con un reclutador de personal formal?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p8" id="p8r1" value="option1">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p8" id="p8r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p8" id="p8r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">9. ¿Tiene un departamento especializado de TI?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p9" id="p9r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p9" id="p9r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p9" id="p9r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">10. ¿La compañía tiene un logo?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p10" id="p10r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p10" id="p10r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p10" id="p10r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">11. ¿Se realizó una planificación estructurada de distribución?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="11" id="p11r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p11" id="p11r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p11" id="p11r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">12. ¿Cuenta con departamento de atención al cliente?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p12" id="p12r1" value="option1">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p12" id="p12r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2" >
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p12" id="p12r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">13. ¿Se elaboran presupuestos semestrales?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p13" id="p13r1" value="option1">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p13" id="p13r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p13" id="p13r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">14 ¿Consideras que el clima laboral de tu compañía es bueno?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p14" id="p14r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p14" id="p14r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p14" id="p14r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">15. ¿Tu empresa afronta demandas legales con regularidad?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p15" id="p15r1" value="option1">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p15" id="p15r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p15" id="p15r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">16. ¿La compañía cuenta con una base de datos?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p16" id="p16r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p16" id="p16r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p16" id="p16r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">17. ¿La compañía cuenta con un departamento de contabilidad?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p17" id="p17r1" value="option1">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p17" id="p17r2" value="option2" checked="true">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p17" id="p17r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">18. ¿La compañía tiene una aplicación móvil?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p18" id="p18r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p18" id="p18r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p18" id="p18r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">19. ¿Tus empleados tienen planes de carrera?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p19" id="p19r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p19" id="p19r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p19" id="p19r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">20. ¿Cuenta con un equipo de brigadistas especializados?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p20" id="p20r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p20" id="p20r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p20" id="p20r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="p2" class="label2">21. ¿Tiene una estrategia de marketing definida?</label>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p21" id="p21r1" value="option1" checked="true">
+							<label class="form-check-label" for="p1r1">
+								Sí
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p21" id="p21r2" value="option2">
+							<label class="form-check-label" for="p1r2">
+								No
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="p21" id="p21r3" value="option3">
+							<label class="form-check-label" for="p1r3">
+								No aplica
+							</label>
+						</div>
+						<div class="d-flex mb-5">
+							<a class="btn btn-lg btn-primary ml-auto" href="servicios.html">Siguiente</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer class="container">
+			<div class="row border-top py-5">
+				<div class="col">
+					<h3 class="lead text-center">Copyright NetBoxing Company @ 2019</h3>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+	</html>
